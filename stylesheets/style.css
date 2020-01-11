@@ -1,0 +1,22 @@
+body{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('/images/background.jpg');
+    background-size: auto;
+}
+
+.color-black{
+    background: black;
+}
+
+.unscrolled{
+    position: sticky;
+    top: 0;
+   
+    
+}
+.scrolled{
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-color: black;
+    transition: background-color 600ms linear;
+}
