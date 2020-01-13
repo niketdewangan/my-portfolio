@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+        <style>
+            .shadow{
+                box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075) 
+            }
+           .card-bg{
+               background-color: rgba(41, 37, 37, 0.329);
+           }
+           .card-logo{
+            width: 100%;
+            position: absolute;
+            top: 45%;
+            left: 0;
+           }
+
+           .image {
+            display: block;
+            width: 100%;
+            height: auto;
+            }
+            .overlay-img{
+                /* display: none; */
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                padding: 1.25rem;
+            }
+            .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color:rgba(12,127,222,0.95);
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+            }
+            .text{
+                padding: 10px;
+            }
+            .overlay-img:hover .overlay {
+            height: 100%;
+            }
+            .project-title{
+                margin: 1.25rem 4rem;
+                
+            }
+            .project-desc{
+                margin: 0.75rem 4rem;
+                font-size: 20px;
+
+            }
+
+        </style>
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4">
+            <div class="card shadow">   
+                <img class="card-img-top" src="/images/number-guessing-game.png" alt="Card image">
+                <div class="overlay-img card-bg">
+                    <div class="card-logo">
+                        <h3 class="text-white text-center">Blah Blah</h3>
+                        
+                    </div>
+                    <a href="index.html">
+                        <div class="overlay">
+                            <h2 class="text-light project-title ">Number Guessing Game</h2>
+                            <p class="text-light project-desc">In this project you will build a small number guessing game. System will 
+                                select a random number between 1 and 100. 
+                                See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+                        </div>
+                    </a>
+               </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

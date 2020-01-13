@@ -1,6 +1,7 @@
 body{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('/images/background.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.808),rgba(0, 0, 0, 0.7)),url('/images/test-compressor-opacity.png');
     background-size: auto;
+    
 }
 
 .color-black{
@@ -10,8 +11,6 @@ body{
 .unscrolled{
     position: sticky;
     top: 0;
-   
-    
 }
 .scrolled{
     position: sticky;
@@ -19,4 +18,58 @@ body{
     z-index: 1;
     background-color: black;
     transition: background-color 600ms linear;
+}
+
+.shadow{
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075) 
+}
+.card-bg{
+   background-color: rgba(41, 37, 37, 0.329);
+}
+.card-logo{
+width: 100%;
+position: absolute;
+top: 45%;
+left: 0;
+}
+
+.image {
+display: block;
+width: 100%;
+height: auto;
+}
+.overlay-img{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+}
+.overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color:rgba(12,127,222,0.95);
+overflow: hidden;
+width: 100%;
+height: 0;
+transition: .3s ease;
+}
+.text{
+    padding: 10px;
+}
+.overlay-img:hover .overlay {
+height: 100%;
+}
+.project-title{
+    margin: 1.25rem 2rem;
+    
+}
+.project-desc{
+    margin: 0.75rem 2rem;
+    font-size: 15px;
+
 }
