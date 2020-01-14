@@ -7,86 +7,114 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
-        <style>
-            .shadow{
-                box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075) 
-            }
-           .card-bg{
-               background-color: rgba(41, 37, 37, 0.329);
-           }
-           .card-logo{
-            width: 100%;
-            position: absolute;
-            top: 45%;
-            left: 0;
-           }
-
-           .image {
-            display: block;
-            width: 100%;
-            height: auto;
-            }
-            .overlay-img{
-                /* display: none; */
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                padding: 1.25rem;
-            }
-            .overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color:rgba(12,127,222,0.95);
-            overflow: hidden;
-            width: 100%;
-            height: 0;
-            transition: .5s ease;
-            }
-            .text{
-                padding: 10px;
-            }
-            .overlay-img:hover .overlay {
-            height: 100%;
-            }
-            .project-title{
-                margin: 1.25rem 4rem;
-                
-            }
-            .project-desc{
-                margin: 0.75rem 4rem;
-                font-size: 20px;
-
-            }
-
-        </style>
-    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>Project Title</title>
 </head>
 <body>
+     <!-- Header -->
+     <header  id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark mb-4 "  >
+            <div class="container ">
+                <a class="navbar-brand" href="#">Nik & Har</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link text-light active" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Contact</a>
+                  </li>
+               
+              </ul>
+              
+            </div>
+            </div>
+          </nav>
+    </header >
   <div class="container">
       <div class="row">
-          <div class="col-lg-4">
-            <div class="card shadow">   
-                <img class="card-img-top" src="/images/number-guessing-game.png" alt="Card image">
-                <div class="overlay-img card-bg">
-                    <div class="card-logo">
-                        <h3 class="text-white text-center">Blah Blah</h3>
-                        
-                    </div>
-                    <a href="index.html">
-                        <div class="overlay">
-                            <h2 class="text-light project-title ">Number Guessing Game</h2>
-                            <p class="text-light project-desc">In this project you will build a small number guessing game. System will 
-                                select a random number between 1 and 100. 
-                                See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
-                        </div>
-                    </a>
+          <div class="col-lg-3">
+            
+                    
                </div>
-          </div>
+            <div class="col-lg-9">
+                    <h1 class="headings text-center">Number Guessing Game</h1>
+
+                    <div class="row ">
+                        <div class="col-lg-5 my-4">
+                            <h2>Project Details</h2>
+                            <span>In this project you will build a small number guessing game. System will 
+                                select a random number between 1 and 100. 
+                                See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</span>
+                            
+                        </div>
+                        <div class="col-lg-7 my-4">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="/images/ngg/slide1.png" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="/images/ngg/slide2.png" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="/images/ngg/slide3.png" alt="Third slide">
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details">
+
+                    </div>
+            </div>
+        </div>
+    </div>
+ 
+  <footer class="color-black ">
+    <div class="container">
+      <div class="row py-4 border-bottom border-light">
+        <div class="col-lg-4">
+          <h3 class="text-light pb-2">Niket & Harshitha</h3>
+          <p class="text-light">Far far away, behind the word mountains, 
+            far from the countries Vokalia and Consonantia, 
+            there live the blind texts.</p>
+        </div>
+        <div class="col-lg-4  col-6">
+          <h3 class="text-light pb2">Links</h3>
+          <ul class="list-group list-unstyled">
+            <li><a class="text-light" href="#">Projects</a></li>
+            <li><a class="text-light" href="#">Blog</a></li>
+            <li><a class="text-light" href="#">About</a></li>
+            <li><a class="text-light" href="#">Content</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-6 text-center">
+          <h3 class="text-light pb-2">Follow us</h3>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-light"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-light"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-light"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+        </div>
       </div>
-  </div>
+      <div class="text-center text-light py-3">
+        <span>&copy; Niket & Harshitha batch(nov-feb 2020)</span>
+      </div>
+    </div>
+    <!-- Jquery & Bootstrap js -->
+ 
+  
+  </footer>
 </body>
 </html>
