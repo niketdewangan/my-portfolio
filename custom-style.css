@@ -25,6 +25,11 @@
 .contain{
     background-color:rgba(0,0,0, 0.6) !important;
 }
+.social{
+    display: flex;
+    margin-top: 1.5rem;
+    list-style: none;
+}
 
 
 
