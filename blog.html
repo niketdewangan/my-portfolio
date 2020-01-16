@@ -6,12 +6,6 @@
     <title>Project-01</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-       window.onscroll = () => {
-    const nav = document.querySelector('#header');
-    if(this.scrollY <= 50) nav.className = 'unscrolled'; else nav.className = 'scrolled';
-  };
-    </script>
 
 </head>
 
@@ -25,8 +19,6 @@
             <nav class="navbar navbar-expand-lg navbar-dark position-relative justify-content-between">
                 <div class="navbar-brand">
 
-                    <!-- Logo -->
-
                     <!-- Name -->
                     <a class=" text-white text-bold font-weight-bold" href="#">Niket & Harshitha</a>
                 </div>
@@ -35,7 +27,7 @@
                     aria-controls="responsive-navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                <!-- navbar links -->
                 <div class="collapse navbar-collapse" id="responsive-navbar">
                     <ul class="navbar-nav ml-auto ">
                         <li class="nav-item mx-2 "><a class="nav-link text-light text-bold" href="">Project</a></li>
@@ -53,10 +45,10 @@
 
 
     <!-- Content -->
-    <!-- Box-01 -->
     <div class="container">
+        <!-- links -->
         <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between color    ">
+            <nav class="nav d-flex justify-content-between contain ">
                 <a class="p-2 text-white" href="/blog?category=HTML">HTML</a>
                 <a class="p-2 text-white" href="/blog?category=CSS">CSS</a>
                 <a class="p-2 text-white" href="/blog?category=JavaScript">JavaScript</a>
@@ -68,7 +60,9 @@
                 <a class="p-2 text-white" href="/blog?category=Bootsrap">Bootsrap</a>
             </nav>
         </div>
-        <div class="jumbotron p-3 p-md-5 rounded text-white">
+
+        <!-- Jumbotron -->
+        <div class="jumbotron p-3 p-md-5 rounded text-white contain">
             <div class="col-md-12 px-0">
                 <h1 class="display-4 font-italic">Design the database using MongoDB</h1>
                 <p class="lead my-3">In this project you will build a small number guessing game. System will select a
@@ -78,51 +72,56 @@
                         class="text-white font-weight-bold">Continue reading...</a></p>
             </div>
         </div>
+
+        <!-- Box-01 -->
         <div class="row mb-2 border-top border-bottom bg ">
             <div class="col-lg-4">
-                        <strong class="d-inline-block mb-2 pt-4 text-dark">Bootstrap</strong>
+                <strong class="d-inline-block mb-2 pt-4 text-dark">Bootstrap</strong>
 
-                        <h3 style=" font-weight: bold; font-size: 18px;">
-                            Building a static portfolio site using Bootstrap 4
-                        </h3>
+                <h3 style=" font-weight: bold; font-size: 18px;">
+                    Building a static portfolio site using Bootstrap 4
+                </h3>
 
-                        <div class="mb-1 " style="padding:10px 0px;">Nov 12 2018</div>
+                <div class="mb-1 " style="padding:10px 0px;">Nov 12 2018</div>
             </div>
 
-                    <div class="col-lg-4 pt-4 text-dark font-weight-bold">
-                        <p class="lg-3 pb-2">In this project you will build a small number guessing game. System
-                            will select a random number between 1 and 100. See if you can guess it in 10 turns or fewer.
-                            We&#x27;ll tell you if your guess was too high or too low.</p>
-                        <a href="/blog/building-a-static-portfolio-site-using-bootstrap-4" class="bc-item text-white font-weight-bold">Continue
-                            reading</a>
-                    </div>
-                
-                <div class="col-lg-4 pt-2 pb-2">
-                    <img class="img-responsive" src="img/flower.jpg">
-                </div>
-
+            <div class="col-lg-4 pt-4 text-dark font-weight-bold">
+                <p class="lg-3 pb-2">In this project you will build a small number guessing game. System
+                    will select a random number between 1 and 100. See if you can guess it in 10 turns or fewer.
+                    We&#x27;ll tell you if your guess was too high or too low.</p>
+                <a href="/blog/building-a-static-portfolio-site-using-bootstrap-4"
+                    class="bc-item text-primary font-weight-bold">Continue
+                    reading</a>
             </div>
+
+            <div class="col-lg-4 pt-2 pb-2">
+                <img class="img-responsive" src="img/flower.jpg">
+            </div>
+
         </div>
     </div>
-
+    <!--Pagination  -->
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
 
     </div>
-
-
-
-
-
-
-
 
 
     <!-- Footer -->
     <footer class="onscroll">
-        <div class="container text-light">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <p class="text-bold font-weight-bold py-3" style="font-size: x-large;" href="#">Niket & Harshitha</a></p>
-                    <p class=" text-bold  py-2">
+
+                    <!-- Name -->
+                    <p class=" text-white text-bold font-weight-bold py-3" style="font-size: x-large;" href="#">Niket &
+                        Harshitha</a></p>
+                    <p class="text-white py-2">
                         Bootstrap is an open source toolkit<br>
                         for developing with HTML, CSS, and JS.<br>
                         Quickly prototype your ideas or build <br>
@@ -131,20 +130,23 @@
                         prebuilt components, and powerful plugins <br>
                         built on jQuery.</p>
                 </div>
+
+                <!-- Links -->
                 <div class="col-lg-4">
-                    <p class="text-bold font-weight-bold py-3" style="font-size: x-large;" href="#">
+                    <p class=" text-white text-bold font-weight-bold py-3" style="font-size: x-large;" href="#">
                         Links</a></p>
-                    <div class="list-unstyled text-light">
-                        <li class="py-2"><a class="text-light" href="#">Project</a></li>
-                        <li class="py-2"><a class="text-light" href="#">Blog</a></li>
-                        <li class="py-2"><a class="text-light" href="#">About</a></li>
-                        <li class="py-2"><a class="text-light" href="#">Contact</a></li>
+                    <div class="list-unstyled">
+                        <li class="py-2"><a class="text-white" href="#">Project</a></li>
+                        <li class="py-2"><a class="text-white" href="#">Blog</a></li>
+                        <li class="py-2"><a class="text-white" href="#">About</a></li>
+                        <li class="py-2"><a class="text-white" href="#">Contact</a></li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- Social media links -->
                 <div class="col-lg-4">
-                    <p class="text-bold font-weight-bold py-3" style="font-size: x-large;" href="#">
-                        Follow
+                    <p class=" text-white text-bold font-weight-bold py-3" style="font-size: x-large;" href="#">Follow
                         Us</a></p>
                     <div class="icons">
                         <i class="fab fa-facebook-f fa-2x"></i>
@@ -152,38 +154,40 @@
                         <i class="fab fa-twitter pl-3 fa-2x"></i>
                     </div>
                 </div>
-                
+
+
             </div>
-            </div>
-        
-                
-                <div class="border-top text-white text-bold font-weight-bold justify-content-between text-center">
-                <p class="site-license">
-                    Copyright © Niket & Harshitha , Batch (Nov-Feb2020).
-                </p>
-            </div>
+        </div>
+        <!-- copyright -->
+        <div class="border-top text-white text-bold font-weight-bold justify-content-between text-center">
+            <p class="site-license">
+                © Niket & Harshitha , Batch (Nov-Feb2020) <br>
+                Built at Thruskills.
+            </p>
+        </div>
         </div>
     </footer>
 
 
+
     <!-- Placed at the end of the document so the pages load faster -->
 
- <!-- Latest compiled and minified CSS -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
- <!-- Fontawesome -->
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
- <!-- jQuery library -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- 
- <!-- Popper JS -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
- 
- <!-- Latest compiled JavaScript -->
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-     <link rel="stylesheet" href="../myportfolio/custom-style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../myportfolio/custom-style.css">
 
 
 

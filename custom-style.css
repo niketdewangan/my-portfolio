@@ -1,20 +1,7 @@
-body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("../myportfolio/img/img-04.jpg");
-    background-size: 150%;
-}
-.trn{
-    background:transparent !important;
-}
 
 .onscroll{
     background:black !important;
 }
-
-.call{
-   background: linear-gradient(white , blue);
-}
-
-/* rgb(115, 187, 235) */
 
 .jumbotron{
     background-color:rgba(0,0,0, 0.4) !important;
@@ -25,13 +12,19 @@ body{
     background-color:rgba(0,0,0, 0.4) !important;
 }
 .bg{
-    background-color:rgba(167, 216, 223, 0.4) !important;
+    background-color:rgba(124, 208, 221, 0.4) !important;
 }
 
 .icons{
     color:white ;
 }
 
+.item{
+    background-color:rgba(167, 216, 223, 0.4) !important;
+}
+.contain{
+    background-color:rgba(0,0,0, 0.6) !important;
+}
 
 
 
