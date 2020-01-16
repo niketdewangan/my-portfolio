@@ -1,28 +1,13 @@
-body{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('/images/test-compressor-opacity.png');
+/* body{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url('/images/test-compressor-opacity.png');
     background-size: auto; 
-}
+} */
 .color-black{
-    background: black;
-}
-.unscrolled{
-    background-color:rgba(0, 0,0, 0.2);
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.3); */
-    position: sticky;
-    top: 0;
-}
-.scrolled{
-    position: sticky;
-    top:0;
-    z-index: 1;
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.3); */
-
     background-color: black;
-    transition: background-color 600ms linear;
-
 }
+
 .card-bg{
-   background-color: rgba(41, 37, 37, 0.2);
+   background-color: rgba(41, 37, 37, 0.5);
 }
 .card-logo{
 width: 100%;
@@ -72,10 +57,29 @@ height: 100%;
 
 }
 /* project details */
-image{
-    margin: 10px 0px;
+.custom-breadcrumb{
+    padding: 10px 0px;
+    display: flex;
+    list-style: none ;
 }
+
+
 .headings{
+    
     font-size: 2.5rem;
     font-weight: 600;
+}
+.font-roboto{
+    font-family: 'Roboto Slab', serif;
+}
+.color-golden{
+    color: #d9c882;
+}
+
+.font-rubik{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+.sidebar-links{
+    margin: 10px 0px;
 }
