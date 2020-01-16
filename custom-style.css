@@ -1,0 +1,36 @@
+
+.onscroll{
+    background:black !important;
+}
+
+.jumbotron{
+    background-color:rgba(0,0,0, 0.4) !important;
+    text-align:center;
+}
+
+.color{
+    background-color:rgba(0,0,0, 0.4) !important;
+}
+.bg{
+    background-color:rgba(124, 208, 221, 0.4) !important;
+}
+
+.icons{
+    color:white ;
+}
+
+.item{
+    background-color:rgba(167, 216, 223, 0.4) !important;
+}
+.contain{
+    background-color:rgba(0,0,0, 0.6) !important;
+}
+.social{
+    display: flex;
+    margin-top: 1.5rem;
+    list-style: none;
+}
+
+
+
+
