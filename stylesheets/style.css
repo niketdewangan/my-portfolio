@@ -5,7 +5,6 @@
 .color-black{
     background-color: black;
 }
-
 .card-bg{
    background-color: rgba(41, 37, 37, 0.5);
 }
@@ -14,11 +13,6 @@ width: 100%;
 position: absolute;
 top: 45%;
 left: 0;
-}
-.image {
-display: block;
-width: 100%;
-height: auto;
 }
 .overlay-img{
     /* display: none; */
@@ -56,14 +50,11 @@ height: 100%;
     font-size: 15px;
 
 }
-/* project details */
-.custom-breadcrumb{
-    padding: 10px 0px;
-    display: flex;
-    list-style: none ;
+.sidebar{
+    margin: 10px;
+    padding: 10px;
+    background-color:rgba(167, 216, 223, 0.4);
 }
-
-
 .headings{
     
     font-size: 2.5rem;
@@ -78,8 +69,17 @@ height: 100%;
 
 .font-rubik{
     font-family: 'Rubik', sans-serif;
+    
+}
+.font-size-35{
+    font-size: 35px;
+}
+.font-size-20{
     font-size: 20px;
 }
 .sidebar-links{
     margin: 10px 0px;
+}
+.sidebar-social{
+    margin: 5px 0px;
 }
