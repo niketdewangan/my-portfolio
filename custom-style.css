@@ -1,5 +1,11 @@
-
-.onscroll{
+.font{
+    
+    font-family: 'Roboto', sans-serif;
+}
+.fontfamily{
+    font-family: 'Rubik', sans-serif;
+}
+.color-black{
     background:black !important;
 }
 
