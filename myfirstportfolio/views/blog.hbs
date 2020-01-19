@@ -1,0 +1,56 @@
+<!--Blog-->
+<div class="container">
+    <!-- links -->
+    <div class="py-1 mb-2">
+        <nav class="nav d-flex justify-content-between contain ">
+            <a class="p-2 text-white" href="">HTML</a>
+            <a class="p-2 text-white" href="/blog?category=CSS">CSS</a>
+            <a class="p-2 text-white" href="/blog?category=JavaScript">JavaScript</a>
+            <a class="p-2 text-white" href="/blog?category=Node.js">Node.js</a>
+            <a class="p-2 text-white" href="/blog?category=Express">Express</a>
+            <a class="p-2 text-white" href="/blog?category=MongoDB">MongoDB</a>
+            <a class="p-2 text-white" href="/blog?category=REST API">REST API</a>
+            <a class="p-2 text-white" href="/blog?category=Angular">Angular</a>
+            <a class="p-2 text-white" href="/blog?category=Bootsrap">Bootsrap</a>
+        </nav>
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron p-3 p-md-5 rounded text-white contain">
+        <div class="col-md-12 px-0">
+            <h1 class="display-4 font-italic">Design the database using MongoDB</h1>
+            <p class="lead my-3">In this project you will build a small number guessing game. System will select a
+                random number between 1 and 100. See if you can guess it in 10 turns or fewer. We&#x27;ll tell you
+                if your guess was too high or too low.</p>
+            <p class="lead mb-0"><a href="/blog/design-the-database-using-mongodb"
+                    class="text-white font-weight-bold">Continue reading...</a></p>
+        </div>
+    </div>
+
+    <!-- Box-01 -->
+    <div class="row mb-2 border-top border-bottom bg ">
+        {{#each blog}}
+        <div class="col-lg-4">
+            <strong class="d-inline-block mb-2 pt-4 text-dark">Bootstrap</strong>
+
+            <h3 style=" font-weight: bold; font-size: 18px;">
+                {{details.title}}
+            </h3>
+
+            <div class="mb-1 " style="padding:10px 0px;">Nov 12 2018</div>
+        </div>
+
+        <div class="col-lg-4 pt-4 text-dark font-weight-bold">
+            <p class="lg-3 pb-2">{{details.description}}</p>
+            <a href="/blog/building-a-static-portfolio-site-using-bootstrap-4"
+                class="bc-item text-primary font-weight-bold">Continue
+                reading</a>
+        </div>
+        <div class="col-lg-4 pt-2 pb-2">
+            <img class="img-responsive" src="{{details.image}}">
+        </div>
+        {{/each}}
+
+
+    </div>
+</div>

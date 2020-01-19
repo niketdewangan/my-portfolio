@@ -1,0 +1,26 @@
+<!-- Project  -->
+<main>
+  <div class="container mb-5">
+    <div class="row ">
+      {{#each projects}}
+      <div class="col-lg-4 my-4">
+        <div class="card shadow">
+          <img class="card-img-top" src="{{this.image}}" alt="Card image">
+          <div class="overlay-img ">
+            <div class="card-logo">
+            </div>
+            <a href="index.html">
+              <div class="overlay">
+                <h5 class="text-light project-title ">{{this.title}}</h5>
+                <p class="text-light project-desc">{{this.description}}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+       {{/each}}
+    </div>
+  </div>
+</main>
+
+
